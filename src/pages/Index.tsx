@@ -159,38 +159,49 @@ export default function Index() {
 
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary/15 via-accent/10 to-secondary/15">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <Badge className="mb-4 text-base px-4 py-1">Профессиональный ремонт дисков</Badge>
-            <h1 className="md:text-7xl mb-6 leading-tight text-5xl font-bold">
-              Порошковая покраска <br />
-              <span className="text-primary">и ремонт дисков</span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Аргонная сварка, правка, реставрация. Гарантия качества и быстрые сроки. 
-              Работаем со всеми типами дисков.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
-                <Icon name="Calculator" size={20} className="mr-2" />
-                Рассчитать стоимость
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8">
-                <Icon name="ImageIcon" size={20} className="mr-2" />
-                Посмотреть работы
-              </Button>
-            </div>
-            <div className="flex flex-wrap justify-center gap-8 mt-12 text-sm">
-              <div className="flex items-center gap-2">
-                <Icon name="CheckCircle2" size={20} className="text-primary" />
-                <span>Гарантия </span>
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              <div className="flex-1 text-center lg:text-left animate-fade-in">
+                <Badge className="mb-4 text-base px-4 py-1">Профессиональный ремонт дисков</Badge>
+                <h1 className="md:text-6xl mb-6 leading-tight text-4xl font-bold">
+                  Порошковая покраска <br />
+                  <span className="text-primary">и ремонт дисков</span>
+                </h1>
+                <p className="text-xl text-muted-foreground mb-8">
+                  Аргонная сварка, правка, реставрация. Гарантия качества и быстрые сроки. 
+                  Работаем со всеми типами дисков.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Button size="lg" className="text-lg px-8">
+                    <Icon name="Calculator" size={20} className="mr-2" />
+                    Рассчитать стоимость
+                  </Button>
+                  <Button size="lg" variant="outline" className="text-lg px-8">
+                    <Icon name="ImageIcon" size={20} className="mr-2" />
+                    Посмотреть работы
+                  </Button>
+                </div>
+                <div className="flex flex-wrap justify-center lg:justify-start gap-8 mt-12 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Гарантия </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Clock" size={20} className="text-primary" />
+                    <span>Срок 3-5 дней</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Award" size={20} className="text-primary" />
+                    <span>Опыт 12 лет</span>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <Icon name="Clock" size={20} className="text-primary" />
-                <span>Срок 3-5 дней</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Icon name="Award" size={20} className="text-primary" />
-                <span>Опыт 12 лет</span>
+              <div className="flex-1 animate-fade-in">
+                <img 
+                  src="https://cdn.poehali.dev/files/8b201aa5-8f54-43b6-8b53-8a7ae075169f.jpg" 
+                  alt="Яркие Диски - порошковая покраска и ремонт"
+                  className="w-full max-w-lg mx-auto rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-300"
+                />
               </div>
             </div>
           </div>
