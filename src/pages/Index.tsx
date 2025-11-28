@@ -81,9 +81,9 @@ export default function Index() {
             <img 
               src="https://cdn.poehali.dev/files/28237d43-927c-4a9e-812b-403631a39acd.jpg" 
               alt="Яркие диски" 
-              className="h-12 w-12 object-contain"
+              className="h-12 w-12 object-contain rounded-md"
             />
-            <span className="text-2xl font-bold">Яркие диски</span>
+            <span className="text-2xl font-bold">Яркие Диски</span>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
@@ -314,7 +314,7 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="outline" className="mb-4">О компании</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">WheelMaster</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Яркие Диски</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 Мы специализируемся на профессиональном ремонте и покраске автомобильных дисков с 2012 года. 
                 Наша команда — это опытные мастера с многолетним стажем и современным оборудованием.
