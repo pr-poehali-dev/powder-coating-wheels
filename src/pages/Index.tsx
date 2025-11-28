@@ -81,7 +81,7 @@ export default function Index() {
             <img 
               src="https://cdn.poehali.dev/files/28237d43-927c-4a9e-812b-403631a39acd.jpg" 
               alt="Яркие диски" 
-              className="h-12 w-12 object-contain rounded-md"
+              className="h-12 w-12 object-contain rounded-xl"
             />
             <span className="text-2xl font-bold">Яркие Диски</span>
           </div>
