@@ -494,7 +494,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 text-center text-sm opacity-60">
-            <p>© 2024 WheelMaster. Все права защищены.</p>
+            <p>© 2024 WheelMasterPaint. Все права защищены.</p>
           </div>
         </div>
       </footer>
