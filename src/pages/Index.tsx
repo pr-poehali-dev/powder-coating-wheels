@@ -78,12 +78,10 @@ export default function Index() {
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img 
-              src="https://cdn.poehali.dev/files/28237d43-927c-4a9e-812b-403631a39acd.jpg" 
-              alt="Яркие диски" 
-              className="h-12 w-12 object-contain rounded-xl mx-0"
-            />
-            <span className="text-2xl font-bold">Яркие Диски</span>
+            <Icon name="Disc3" size={32} className="text-primary" />
+            <span className="text-3xl font-black tracking-tight bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+              Яркие Диски
+            </span>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
