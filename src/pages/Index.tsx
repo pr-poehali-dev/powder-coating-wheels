@@ -155,7 +155,7 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/10 via-accent/5 to-background">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/15 via-accent/10 to-secondary/15">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 text-base px-4 py-1">Профессиональный ремонт дисков</Badge>
@@ -195,7 +195,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="services" className="py-20 bg-muted/30">
+      <section id="services" className="py-20 bg-gradient-to-r from-secondary/20 to-primary/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <Badge variant="outline" className="mb-4">Наши услуги</Badge>
@@ -229,7 +229,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20">
+      <section id="portfolio" className="py-20 bg-gradient-to-l from-accent/15 via-primary/10 to-transparent">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Портфолио</Badge>
@@ -263,7 +263,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="pricing" className="py-20 bg-muted/30">
+      <section id="pricing" className="py-20 bg-gradient-to-tr from-primary/10 via-secondary/15 to-accent/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Прайс-лист</Badge>
@@ -305,7 +305,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="about" className="py-20">
+      <section id="about" className="py-20 bg-gradient-to-bl from-secondary/15 via-accent/10 to-primary/15">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -354,7 +354,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="faq" className="py-20 bg-muted/30">
+      <section id="faq" className="py-20 bg-gradient-to-r from-accent/20 to-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">FAQ</Badge>
@@ -378,7 +378,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="contacts" className="py-20">
+      <section id="contacts" className="py-20 bg-gradient-to-tl from-primary/20 via-accent/15 to-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Контакты</Badge>
