@@ -1,12 +1,15 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Icon from "@/components/ui/icon";
 
 export default function Index() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const services = [
     {
       icon: "Sparkles",
@@ -86,10 +89,69 @@ export default function Index() {
             <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
             <a href="#contacts" className="hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button>
-            <Icon name="Phone" size={18} className="mr-2" />
-            Позвонить
-          </Button>
+          <div className="flex items-center gap-4">
+            <Button className="hidden sm:flex">
+              <Icon name="Phone" size={18} className="mr-2" />
+              Позвонить
+            </Button>
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="md:hidden">
+                  <Icon name="Menu" size={24} />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <nav className="flex flex-col gap-6 mt-8">
+                  <a 
+                    href="#services" 
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Услуги
+                  </a>
+                  <a 
+                    href="#portfolio" 
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Портфолио
+                  </a>
+                  <a 
+                    href="#pricing" 
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Цены
+                  </a>
+                  <a 
+                    href="#about" 
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    О нас
+                  </a>
+                  <a 
+                    href="#faq" 
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    FAQ
+                  </a>
+                  <a 
+                    href="#contacts" 
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Контакты
+                  </a>
+                  <Button className="w-full mt-4">
+                    <Icon name="Phone" size={18} className="mr-2" />
+                    Позвонить
+                  </Button>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </header>
 
