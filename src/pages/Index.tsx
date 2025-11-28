@@ -81,7 +81,7 @@ export default function Index() {
             <img 
               src="https://cdn.poehali.dev/files/28237d43-927c-4a9e-812b-403631a39acd.jpg" 
               alt="Яркие диски" 
-              className="h-12 w-12 object-contain rounded-xl"
+              className="h-12 w-12 object-contain rounded-xl mx-0"
             />
             <span className="text-2xl font-bold">Яркие Диски</span>
           </div>
@@ -163,7 +163,7 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 text-base px-4 py-1">Профессиональный ремонт дисков</Badge>
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+            <h1 className="md:text-7xl mb-6 leading-tight text-5xl font-bold">
               Порошковая покраска <br />
               <span className="text-primary">и ремонт дисков</span>
             </h1>
@@ -184,7 +184,7 @@ export default function Index() {
             <div className="flex flex-wrap justify-center gap-8 mt-12 text-sm">
               <div className="flex items-center gap-2">
                 <Icon name="CheckCircle2" size={20} className="text-primary" />
-                <span>Гарантия 2 года</span>
+                <span>Гарантия </span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="Clock" size={20} className="text-primary" />
@@ -202,7 +202,7 @@ export default function Index() {
       <section id="services" className="py-20 bg-gradient-to-r from-secondary/20 to-primary/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge variant="outline" className="mb-4">Наши услуги</Badge>
+            <Badge variant="outline" className="mb-4"></Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Что мы делаем</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Полный спектр услуг по восстановлению и покраске автомобильных дисков
@@ -236,7 +236,7 @@ export default function Index() {
       <section id="portfolio" className="py-20 bg-gradient-to-l from-accent/15 via-primary/10 to-transparent">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Портфолио</Badge>
+            <Badge variant="outline" className="mb-4"></Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши работы</h2>
             <p className="text-muted-foreground text-lg">До и после реставрации</p>
           </div>
@@ -462,11 +462,9 @@ export default function Index() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Disc3" size={32} className="text-primary" />
-                <span className="text-2xl font-bold">WheelMaster</span>
+                <span className="text-2xl font-bold">Студия "Яркие Диски"</span>
               </div>
-              <p className="text-sm opacity-80">
-                Профессиональный ремонт и покраска автомобильных дисков с 2012 года
-              </p>
+              <p className="text-sm opacity-80">Профессиональный ремонт и покраска автомобильных дисков </p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Услуги</h4>
